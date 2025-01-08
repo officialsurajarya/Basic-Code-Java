@@ -1,13 +1,12 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+package Learning;
 
-class UserInput{
-    public static void main (String[] args) throws IOException{
-        InputStreamReader io = new InputStreamReader(System.in);
-        BufferedReader br = new BufferedReader(io);
-        System.out.print("Enter Passcode: ");
-        String Pascode = br.readLine();
-        System.out.println("Your Passcode is : "+ Pascode);
+import java.util.Scanner;
+
+public class userInput {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter Your Name: ");
+        String name = input.nextLine();
+        System.out.println("Your Name Is "+name);
     }
 }
